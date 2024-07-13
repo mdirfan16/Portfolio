@@ -6,19 +6,20 @@
     font-weight: 400;
     font-style: normal;
     font-variation-settings:
-      "wdth" 100;
-  }
+        "wdth" 100;
+}
 
 * {
     margin: 0;
     padding: 0;
 }
-.secendery-bg{
+
+.secendery-bg {
     background-color: #fcf2e3;
 
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,32 +32,35 @@ nav{
     margin-top: 20px;
 }
 
-.dark-2{
+.dark-2 {
     color: blueviolet;
 }
 
 .text-center {
     text-align: center;
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
     margin: 0 30px;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     font-weight: 600;
 
 }
 
-.link-color{
+.link-color {
     color: rgb(76, 76, 76);
 }
 
 nav ul {
     display: flex;
     align-items: center;
-    
+
 }
+
 .btn-primary {
     background-color: rgb(255, 106, 0);
     border: none;
@@ -68,39 +72,62 @@ nav ul {
     margin: 20px 0;
 }
 
+@media screen and (max-width : 576px) {
+    nav ul {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+        margin: 0 0 0 0px;
+    }
+
+    .btn-primary {
+        background-color: rgb(255, 106, 0);
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 5px 15px;
+    }
+
+
+}
+
 .banner-welcome {
     font-family: Open Sans, sans-serif;
-    color:black;
+    color: black;
     font-size: 45px;
     font-weight: 600;
 }
 
-.banner-title{
+.banner-title {
     font-family: Open Sans, sans-serif;
     color: black;
     font-size: 60px;
     font-weight: 900;
 }
 
-.banner-discription{
+.banner-discription {
     color: rgb(61, 61, 61);
     font-size: 15px;
     line-height: 20px;
 }
 
-.banner-content{
+.banner-content {
     max-width: 500px;
 
 }
 
-.banner{
+.banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 50px 0 150px;
 }
 
-.banner-images img{
+.banner-images img {
     width: 300px;
     height: auto;
     margin-top: 40px
@@ -112,21 +139,50 @@ nav ul {
     background-position: top left, bottom right;
 }
 
-main{
+@media screen and (max-width : 576px) {
+    .banner-content {
+        max-width: 300px;
+
+    }
+
+    .banner {
+        flex-direction: column;
+        margin: 0 0 0 0px;
+    }
+
+    .header-bg {
+        background-image: url('shap_00_.png') ;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: 120%;
+
+    }
+
+    .banner-images img {
+        width: 250px;
+        height: auto;
+    }
+
+
+}
+
+main {
     max-width: 1140px;
     margin: 0 auto;
 }
 
-main section{
+main section {
     margin: 80px;
 }
+
 /* about style */
-.about{
+.about {
     border-radius: 10px;
     text-align: center;
     padding: 80px 80px;
-    
+
 }
+
 .about-title {
     color: black;
     font-size: 25px;
@@ -134,29 +190,47 @@ main section{
     margin: 20px;
 }
 
-.about-description{
+.about-description {
     color: rgb(87, 87, 87);
     font-size: 15px;
     margin-bottom: 20px;
 }
 
-.about-items{
+.about-items {
     display: flex;
     justify-content: space-around;
 }
 
-.about-item-title{
-    color: rgb(87, 87, 87) ;
+.about-item-title {
+    color: rgb(87, 87, 87);
     font-size: 15px;
     margin-bottom: 5px;
     font-weight: 600;
 }
-.about-item-description{
+
+.about-item-description {
     color: rgb(47, 31, 11);
     font-weight: 700;
     font-size: 17px;
 }
+@media screen and (max-width : 576px){
+    .about {
+        border-radius: 10px;
+        padding: 80px 150px;
+        text-align: center;
+    
+    }
+    .about-items {
+        flex-direction: column;
+    }
+    
 
+}
+
+.hide {
+    display: none;
+}
+/* skills */
 .skills {
     margin: 80px;
 
@@ -164,32 +238,48 @@ main section{
 
 }
 
-.skill{
+.skill {
     padding: 40px 20px;
     border-radius: 10px;
     box-shadow: 3px 5px 25px rgba(0, 0, 0, 0.265);
     margin-top: 40px;
 }
-.skill-title{
+
+.skill-title {
     font-size: 17px;
     margin: 10px 0 10px 0;
 }
 
-.skill-container{
+.skill-container {
     display: flex;
     gap: 20px;
 }
-.skill-description{
+
+.skill-description {
     color: rgb(87, 87, 87);
     font-size: 15px;
 }
+@media screen  and (max-width: 576px ){
+    .skill-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .skill {
+        padding: 40px 20px;
+        border-radius: 10px;
+        box-shadow: 3px 5px 25px rgba(0, 0, 0, 0.265);
+    }
+
+    
+}
 
 /* resume style */
-.resume-container{
+.resume-container {
     display: flex;
     gap: 20px;
 }
-.resume-title{
+
+.resume-title {
     color: black;
     font-size: 25px;
     margin: 10px 0 10px 0;
@@ -197,43 +287,61 @@ main section{
 
 }
 
-.resume-colum-title{
+.resume-colum-title {
     font-size: 22px;
     margin: 20px 0;
 }
-.expericence-title{
+
+.expericence-title {
     font-size: 18px;
     margin: 5px 0;
 }
-.expericence-sub-title{
+
+.expericence-sub-title {
     font-size: 15px;
     color: rgb(65, 65, 65);
 }
+
 .experience-description {
     color: rgb(87, 87, 87);
     font-size: 15px;
     margin: 5px 0;
 }
-.resume hr{
+
+.resume hr {
     margin: 20px 0;
 }
 
 .resume-cv-dn-button {
     text-align: center;
 }
+@media screen and (max-width: 576px) {
+    .resume-container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .resume-colum-title{
+        color: black;
+    }
+    .resume-colum-title:hover{
+        color: red;
+    }
+}
 
 
-footer{
+footer {
     padding: 40px 230px;
     display: flex;
     gap: 50px;
 }
-.footer-colum{
+
+.footer-colum {
     width: 50%;
 
 }
 
-footer input[type="text"]{
+footer input[type="text"] {
     padding: 15px 0 15px 20px;
     width: 100%;
     font-size: 16px;
@@ -244,7 +352,7 @@ footer input[type="text"]{
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.131);
 }
 
-footer input[type="email"]{
+footer input[type="email"] {
     padding: 15px 0 15px 20px;
     width: 100%;
     font-size: 15px;
@@ -254,7 +362,8 @@ footer input[type="email"]{
     margin-bottom: 10px;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.131);
 }
-footer textarea{
+
+footer textarea {
     padding: 15px 0 15px 20px;
     width: 100%;
     font-size: 15px;
@@ -265,20 +374,38 @@ footer textarea{
     box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.131);
     font-family: open sans, sans-serif;
 }
-.footer-title{
+
+.footer-title {
     color: black;
     font-size: 25px;
     line-height: 30px;
     margin-bottom: 20px;
 
 }
-.footer-description{
+
+.footer-description {
     color: rgb(87, 87, 87);
     font-size: 15px;
     margin-bottom: 20px;
 }
 
-.foote-social-icons{
+.foote-social-icons {
     display: flex;
     gap: 20px;
+}
+
+@media screen and (max-width: 576px) {
+    footer {
+        padding: 50px;
+        flex-direction: column;
+        gap: 50px;
+        
+    }
+
+    .footer-colum {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
 }
